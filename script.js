@@ -1,13 +1,10 @@
-function changeTheme() {
-    const body = document.body;
-  
-    if (body.style.backgroundColor === "black") {
-      body.style.backgroundColor = "white";
-      body.style.color = "black";
-    } else {
-      body.style.backgroundColor = "black";
-      body.style.color = "white";
-    }
-  }
-  
-  document.getElementById("themeButton").addEventListener("click", changeTheme);
+// Simulate visitor count (just an example)
+let visitorCount = 0;
+document.getElementById('visitor-count').innerText = Total `Visitors: ${visitorCount}`;
+
+// Handle form submission
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Message Sent!');
+    this.reset();
+});
